@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 151, 37);
+    text-align: center;
+}
+
+.heading {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Quotes Section */
+.quotes {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+    border: 1px solid white;
+}
+
+#quote {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+#author {
+    padding: 8px;
+}
+
+#quoteBtn {
+    padding: 10px;
+    margin: 10px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
