@@ -1,9 +1,20 @@
 # PeaceOfMind - JavaScript Project
 
+## Table of contents
+
+- [About](#about)
+  - [Website Content](#website-content)
+  - [Link to Live Site](#link-to-live-site)
+- [My process](#my-process)
+  - [Tech Stack](#tech-stack)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## About
+
 This is a website where users can set the mood of the website and generate inspirational quotes using an API. The aim of this project was to 
 create a javascript website with minimal HTML and CSS.
-
-Live Site: https://getsomepeaceofmind.netlify.app/
 
 ### Website Content
 
@@ -32,14 +43,52 @@ Waves Example:
 
 ![image](https://github.com/SherahIsrael/PeaceOfMind/assets/125824475/114a53c0-8a23-4fc8-a9d7-0bc911bcd98f)
 
-## Tech Stack 
+### Link to Live Site
+
+Live Site: https://getsomepeaceofmind.netlify.app/
+
+## My Process
+
+### Tech Stack
 
 - HTML5 markup
 - CSS
 - JavaScript
 - Quote API
 
-## Challenges
+### What I learned
+
+One of the biggest issues I had was getting the music, the video and the timer to stop when the timer reached 00:00. When the timer 
+reached 0 it kept on decresing into the negatives and even when I placed the time variable in an if statement the clearInterval()
+function had no effect on it. I solved this problem using this code:
+
+```
+if(time >= 1) {
+        time--;
+    } else {
+        song.pause()
+        background.pause()
+        background.style.display = "none"
+        play.src = '/images/play.svg'
+        countdown.innerHTML = "00:00"
+    }
+```
+
+For the stop button, I had to pause the timer reset the duration and redeclare the time inside of the function to stop the timer from
+speeding up when a new duration was selected and played.
+
+```
+function stopping() {
+    song.pause()
+    background.pause()
+    background.style.display = "none"
+    play.src = '/images/play.svg'
+    clearInterval(timer)
+    countdown.innerHTML = "00:00"
+    duration = 0
+    time = duration * 60
+}
+```
 
 Through this project I doscovered the file size limitaions of Github. The original videos I had for the mood backgrounds were in 4K.
 These files were too big for netlify's Large Media and Git's LFS, even with compression to a lower quality. To overcome this I 
@@ -48,3 +97,9 @@ simplified the backgrounds with shorter 720p videos which are a maximum of 1 min
 ## Author 
 
 Sherah Israel
+
+## Acknowledgments
+
+I was inspired by the meditation app found on the link below for this project.
+
+https://dev.to/simonholdorf/9-awesome-projects-you-can-build-with-vanilla-javascript-2o1b
