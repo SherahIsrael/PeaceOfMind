@@ -59,7 +59,7 @@ Live Site: https://getsomepeaceofmind.netlify.app/
 ### What I learned
 
 One of the biggest issues I had was getting the music, the video and the timer to stop when the timer reached 00:00. When the timer 
-reached 0 it kept on decresing into the negatives and even when I placed the time variable in an if statement the clearInterval()
+reached 0 it kept on decreasing into the negatives and even when I placed the time variable in an if statement the clearInterval()
 function had no effect on it. I solved this problem using this code:
 
 ```
