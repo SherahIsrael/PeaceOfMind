@@ -74,7 +74,7 @@ if(time >= 1) {
     }
 ```
 
-For the stop button, I had to pause the timer reset the duration and redeclare the time inside of the function to stop the timer from
+For the stop button, I had to pause the timer, reset the duration and redeclare the time inside of the function to stop the timer from
 speeding up when a new duration was selected and played.
 
 ```
@@ -90,7 +90,7 @@ function stopping() {
 }
 ```
 
-Through this project I doscovered the file size limitaions of Github. The original videos I had for the mood backgrounds were in 4K.
+Through this project I discovered the file size limitations of Github. The original videos I had for the mood backgrounds were in 4K.
 These files were too big for netlify's Large Media and Git's LFS, even with compression to a lower quality. To overcome this I 
 simplified the backgrounds with shorter 720p videos which are a maximum of 1 minute long.
 
