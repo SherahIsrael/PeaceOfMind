@@ -192,7 +192,7 @@ fish.addEventListener('click', changeToUnderwater)
 waves.addEventListener('click', changeToWaves)
 
 function changeToNature() {
-    background.src="videos/natureCon.mp4"
+    background.src="videos/nature.mp4"
     background.style.display = "block"
     song.src="music/nature.mp3"
     play.src = '/images/play.svg'
@@ -200,7 +200,7 @@ function changeToNature() {
 }
 
 function changeToRain() {
-    background.src="videos/rainConverted.mp4"
+    background.src="videos/rain.mp4"
     background.style.display = "block"
     song.src="music/rain.wav"
     play.src = '/images/play.svg'
@@ -208,7 +208,7 @@ function changeToRain() {
 }
 
 function changeToSnowy() {
-    background.src="videos/snowyConverted.mp4"
+    background.src="videos/snowy.mp4"
     background.style.display = "block"
     song.src="music/snowy.mp3"
     play.src = '/images/play.svg'
@@ -224,7 +224,7 @@ function changeToUnderwater() {
 }
 
 function changeToWaves() {
-    background.src="videos/wavesConverted.mp4"
+    background.src="videos/waves.mp4"
     background.style.display = "block"
     song.src="music/waves.mp3"
     play.src = '/images/play.svg'
