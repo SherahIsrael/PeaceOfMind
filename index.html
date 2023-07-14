@@ -6,15 +6,55 @@
     <link rel="stylesheet" href="style.css">
     <title>Peace Of Mind By Sherah Israel</title>
 </head>
-<body>
+<body id="body">
     <h1 class="heading">Get Some Peace Of Mind</h1>
-    <div class="quotes">
+    <div class="quotes box">
         <h2>Get some inspiration</h2>
         <h3 id="quote"></h3>
         <p id="author"></p>
         <button id="quoteBtn">Generate</button>
     </div>
-
+    <video id="background" loop>
+        <source src="/videos/nature.mp4">
+    </video>
+    <div class="options">
+            
+    <div class="time box">
+        <h2>Choose a duration</h2>
+        <button id="5mins">5 minutes</button>
+        <button id="10mins">10 minutes</button>
+        <button id="15mins">15 minutes</button>
+        <button id="20mins">20 minutes</button>
+        <button id="25mins">25 minutes</button>
+        <button id="30mins">30 minutes</button>
+    </div>
+    <div class="sound box">
+        <h2 id="countdown">00:00</h2>
+        <audio id="song">
+            <source src="/music/soothing.mp3">
+        </audio>
+        <img class="play" src="/images/play.svg" alt="play button">
+        <img id="stop" src="/images/stop.svg" alt="stop button">
+    </div>
+    <div class="mood box">
+        <h2>Pick a Mood</h2>
+        <button>
+            <img id="nature" src="/images/nature.svg" alt="nature">
+        </button>
+        <button>
+            <img id="rain" src="/images/rain.svg" alt="rain">
+        </button>
+        <button>
+            <img id="snowy" src="/images/snowy.svg" alt="snowy">
+        </button>
+        <button>
+            <img id="fish" src="/images/fish.svg" alt="fish">
+        </button>
+        <button>
+            <img id="waves" src="/images/waves.svg" alt="waves">
+        </button>
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(238, 151, 37);
+    background-color: rgb(168, 223, 246);
     text-align: center;
 }
 
@@ -14,17 +14,21 @@ body {
     padding: 20px;
 }
 
-/* Quotes Section */
-.quotes {
-    background-color: rgba(255, 255, 255, 0.25);
-    padding: 20px;
-    width: 40%;
-    margin: auto;
+.box {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.1);
     border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Quotes Section */
+.quotes {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
 }
 
 #quote {
@@ -43,4 +47,73 @@ body {
     border-style: none;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
+}
+
+/* Background */
+#background {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    display: none;
+    z-index: -1;
+    transition: 1s;
+}
+
+/* Time Duration Section */
+
+.time, .mood {
+    display:flex;
+    flex-wrap: wrap;  
+    width: 25%;
+    justify-content: center;
+    position: absolute;
+    top: 350px;
+}
+
+.time {
+    left: 30px;
+}
+
+.time h2, .mood h2 {
+    flex-basis: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.time button {
+    flex-basis: 40%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+/* Sound Section */
+.sound {
+    position: absolute;
+    top: 55%;
+    left: 47%;
+    padding: 20px;
+}
+
+#countdown {
+    font-size: xx-large;
+}
+
+/* Mood Section */
+.mood {
+    right: 30px;
+}
+
+.mood button {
+    margin: 10px;
+    padding: 5px;
+    background: none;
+    border-style: none;
+}
+
+.mood button:hover {
+    cursor: pointer;
 }
